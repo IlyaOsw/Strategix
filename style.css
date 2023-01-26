@@ -254,7 +254,7 @@ body {
     margin-right:  10px;
 }
 @media (max-width: 479px) {
-    mein-block__button {
+    .main-block__button {
         flex: 1 1 100%;
     }
 }
