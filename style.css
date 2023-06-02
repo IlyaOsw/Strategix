@@ -491,7 +491,7 @@ body {
 .whoweare__video {
     flex: 0 0 57%;
     position: relative;
-    padding: 0px 0px 42.25% 0px ;
+    padding: 0px 0px 42.25% 0px;
 }
 .whoweare__video iframe {
     position: absolute;
