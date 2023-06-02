@@ -899,7 +899,7 @@ body {
     line-height: 171%;
     letter-spacing: 0.2px;
 }
-.menu-footer__link:hover{
+.menu-footer__link:hover {
     text-decoration: underline;
 }
 .contacts-footer {
