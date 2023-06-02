@@ -952,7 +952,7 @@ body {
     .footer__container {
         flex-direction: column;
     }
-    .footer__copy{
+    .footer__copy {
         margin: 0px 0px 15px 0px;
         text-align: center;
     }
