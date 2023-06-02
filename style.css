@@ -870,7 +870,7 @@ body {
 .footer__column:last-child {
     flex: 0 1 33.334%;
 }
-@media (max-width: 992px){
+@media (max-width: 992px) {
     .footer__column {
         flex: 0 1 25%;
     }
