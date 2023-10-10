@@ -99,6 +99,9 @@ body {
   .header__menu {
     margin: 0px 0px 0px 40px;
   }
+  .header__container {
+    letter-spacing: 0px;
+  }
   @media (max-width: 479px) {
     .header__menu {
       margin: 0px 0px 0px 20px;
