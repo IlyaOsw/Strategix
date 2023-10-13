@@ -123,21 +123,29 @@ body {
   font-weight: 700;
   line-height: calc(24 / 14 * 100%);
   transition: 0.3s all;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
 }
 .menu__link:hover {
   color: #ff3c3c;
 }
-.menu__link::after {
+.menu__link:after {
   content: "";
   display: block;
-  width: 100%;
+  position: absolute;
+  width: 0;
+  height: 1px;
   background-color: #ff3c3c;
-  height: 0.5px;
-  transition: all 0.3s;
-  transform: scale(0);
+  transition: 0.4s;
+  right: 0;
+  left: initial;
 }
-.menu__link:hover::after {
-  transform: scale(1);
+.menu__link:hover:after,
+.menu__link:focus:after {
+  width: 100%;
+  right: initial;
+  left: 0;
 }
 @media (max-width: 479px) {
   .menu__link {
@@ -164,7 +172,7 @@ body {
   line-height: 142%;
   font-weight: 700;
   font-size: 40px;
-  text-decoration: underline;
+  text-decoration: overline;
 }
 .header-block__tittle:not(:last-child) {
   margin: 0px 0px 10px 0px;
@@ -688,7 +696,7 @@ body {
   transition: 0.3s all;
 }
 .clients__item:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .clients__item img {
   max-width: 100%;
@@ -766,7 +774,7 @@ body {
 }
 .subscribe__input:focus {
   color: black;
-  background: rgb(220, 220, 220);
+  background: rgb(233, 233, 233);
   outline: 1px solid #ff3c3c;
 }
 .subscribe__button {
@@ -851,10 +859,38 @@ body {
   letter-spacing: 1px;
 }
 .item-getintouch__email {
-  color: inherit;
-  font-weight: 600;
-  line-height: 150%;
   font-size: 16px;
+  color: inherit;
+  line-height: 150%;
+  font-weight: 600;
+  transition: 0.3s all;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+.item-getintouch__email:hover {
+  color: #ff3c3c;
+}
+.item-getintouch__email:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #ff3c3c;
+  transition: 0.4s;
+  right: 0;
+  left: initial;
+}
+.item-getintouch__email:hover:after,
+.item-getintouch__email:focus:after {
+  width: 100%;
+  right: initial;
+  left: 0;
+}
+.contact__container {
+  border-top: 1px solid black;
+  padding-top: 10px;
 }
 .item-getintouch__email:hover {
   color: #ff3c3c;
@@ -949,7 +985,7 @@ body {
   border-radius: 25px;
   min-height: 58px;
   padding: 5px 40px;
-  transition: background-color 0.3s ease 0s;
+  transition: 0.3s ease 0s;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -958,7 +994,9 @@ body {
   letter-spacing: 1px;
 }
 .contact__button:hover {
-  filter: brightness(90%);
+  outline: 1px solid #ff3c3c;
+  background-color: #fff;
+  color: #ff3c3c;
 }
 /* -------------------------------------------------------------------------------------------- */
 .footer__top {
@@ -1009,21 +1047,30 @@ body {
   display: inline-block;
   line-height: 171%;
   letter-spacing: 0.5px;
+  transition: 0.3s all;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
 }
 .menu-footer__link:hover {
   color: #ff3c3c;
 }
-.menu-footer__link::after {
+.menu-footer__link:after {
   content: "";
   display: block;
-  width: 100%;
+  position: absolute;
+  width: 0;
+  height: 1px;
   background-color: #ff3c3c;
-  height: 0.5px;
-  transition: all 0.3s;
-  transform: scale(0);
+  transition: 0.4s;
+  right: 0;
+  left: initial;
 }
-.menu-footer__link:hover::after {
-  transform: scale(1);
+.menu-footer__link:hover:after,
+.menu-footer__link:focus:after {
+  width: 100%;
+  right: initial;
+  left: 0;
 }
 .contacts-footer {
   display: flex;
