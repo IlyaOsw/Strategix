@@ -173,6 +173,10 @@ body {
   font-weight: 700;
   font-size: 40px;
   text-decoration: overline;
+  transition: 1s all;
+}
+.header-block__tittle:hover {
+  transform: scale(1.1);
 }
 .header-block__tittle:not(:last-child) {
   margin: 0px 0px 10px 0px;
